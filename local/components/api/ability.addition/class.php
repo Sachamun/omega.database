@@ -16,7 +16,7 @@ class add_ability extends \CBitrixComponent
         
         if(empty($post["TITLE"])){
             header('HTTP/1.1 400 Bad Request');
-            echo "Не введено название. Это обязательное поле!";
+            echo "Не введено название способности. Это обязательное поле!";
             die();
         }
 

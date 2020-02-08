@@ -7,12 +7,12 @@ class changeAbility
     public function abilityPutComponent($putdata)
     {
 
-        $abUp = [
+        $ab = [
             'UF_TITLE' => $putdata['TITLE'],
             'UF_ELEMENT' => $putdata['ELEMENT']
         ];
 
-        $result = AbilityTable::update($putdata['ID'], $abUp);
+        $result = AbilityTable::update($putdata['ID'], $ab);
         if (empty($result)) {
             echo'Ошибка!';
             die();
